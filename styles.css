@@ -1,0 +1,261 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #000000, #1a365d, #000000);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.container {
+    max-width: 1200px; /* Atur lebar maksimum sesuai kebutuhan Anda */
+    margin: 0 auto;    /* Tengah konten secara horizontal */
+    padding: 0 15px;   /* Tambahkan padding agar tidak terlalu mepet ke tepi */
+}
+
+main {
+    padding: 4rem 0; /* Reduce the padding slightly to tighten up the layout */
+}
+
+footer p:hover {
+    color: var(--neon-green); /* Add a neon green hover effect */
+    text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green);
+    transition: all 0.3s ease;
+}
+
+
+
+header, main, footer {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Cyberpunk Theme Colors */
+:root {
+    --neon-pink: #ff007a;
+    --neon-blue: #00f0ff;
+    --neon-green: #00ff7f;
+    --neon-purple: #d400ff;
+    --dark-bg: #0d0d0d;
+    --dark-card-bg: #1a1a1a;
+}
+
+/* Body Background */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
+
+/* Neon Text */
+.text-neon {
+    color: var(--neon-blue);
+    text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue), 0 0 15px var(--neon-blue);
+}
+
+Skill Card
+.skill-card {
+    background-image: linear-gradient(to bottom right, #000000, #1a365d, #000000);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid var(--neon-pink);
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* Icon Container */
+.icon-container {
+    background-image: linear-gradient(to bottom right, #000000, #1a365d, #000000);
+    padding: 0.75rem;
+    border-radius: 9999px;
+    box-shadow: 0 0 10px var(--neon-blue);
+}
+
+.skill-card img {
+    max-width: 48px;
+    margin: auto;
+}
+
+
+
+/* Hover Glow Effect */
+.hover\:shadow-neon:hover {
+    box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-blue);
+}
+
+/* Dark Background for Cards */
+.bg-dark {
+    background-color: var(--dark-bg);
+}
+
+/* Text Colors */
+.text-neon {
+    color: var(--neon-green);
+    text-shadow: 0 0 5px var(--neon-green), 0 0 10px var(--neon-green), 0 0 15px var(--neon-green);
+}
+
+.text-gray-300 {
+    color: #d1d5db;
+}
+
+.text-neon-blue {
+    color: var(--neon-blue);
+}
+
+
+
+
+.swiper-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 250px;
+        height: 350px;
+    }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fde047;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fde047;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.5) 100%);
+    pointer-events: none;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        border-radius: 0 0 0 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
+#about img {
+    margin-bottom: 20px; /* Add some space between the image and text */
+}
+#about {
+    padding: 30px; /* Add more space around the whole section */
+}
+
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fde047;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: var(--neon-pink);
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+.education-swiper {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.education-swiper .swiper-slide {
+    width: auto;
+    height: auto;
+}
+
+.education-swiper .swiper-button-next,
+.education-swiper .swiper-button-prev {
+    color: #fde047;
+}
+
+.education-swiper .swiper-button-next:after,
+.education-swiper .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .education-swiper .swiper-slide {
+        width: 250px;
+    }
+}
+
+
+
+
